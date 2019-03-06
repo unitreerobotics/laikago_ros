@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>laikago</name>
+    <version>0.0.0</version>
+    <description>The laikago package</description>
+
+    <maintainer email="laikago@unitree.cc">unitree</maintainer>
+    <license>MPL</license>
+
+    <buildtool_depend>catkin</buildtool_depend>
+    <buildtool_depend>genmsg</buildtool_depend>
+    <build_depend>controller_manager</build_depend>
+    <build_depend>joint_state_controller</build_depend>
+    <build_depend>robot_state_publisher</build_depend>
+    <build_depend>roscpp</build_depend>
+    <build_depend>std_msgs</build_depend>
+    <build_export_depend>controller_manager</build_export_depend>
+    <build_export_depend>joint_state_controller</build_export_depend>
+    <build_export_depend>robot_state_publisher</build_export_depend>
+    <build_export_depend>roscpp</build_export_depend>
+    <build_export_depend>std_msgs</build_export_depend>
+
+</package>
