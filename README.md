@@ -14,4 +14,5 @@ We use Xacro formatted description, which is simpler and cleaner than URDF forma
 
 Or you can just run:
 * `roslaunch laikago_rviz rviz.launch`
+
 The robot should be spawned in Rviz.
