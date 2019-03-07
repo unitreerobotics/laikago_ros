@@ -11,6 +11,7 @@ We use Xacro formatted description, which is simpler and cleaner than URDF forma
 #### Run:
 * `cd ~/path-to-catkin-workspace/src/laikago_rviz/launch`
 * `roslaunch ./rviz.launch`
+
 Or you can just run:
 * `roslaunch laikago_rviz rviz.launch`
 The robot should be spawned in Rviz.
