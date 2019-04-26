@@ -1,7 +1,7 @@
 <launch>
 
   <param name="robot_description"
-    command="$(find xacro)/xacro --inorder '$(find laikago)/robot/robot.xacro'" />
+    command="$(find xacro)/xacro --inorder '$(find laikago_description)/robot/robot.xacro'" />
 
   <!-- send fake joint values -->
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">

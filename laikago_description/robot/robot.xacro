@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 
-<robot name="laikago" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="laikago_description" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-    <xacro:include filename="$(find laikago)/robot/const.xacro"/>
-    <xacro:include filename="$(find laikago)/robot/materials.xacro"/>
-    <xacro:include filename="$(find laikago)/robot/leg.xacro"/>
+    <xacro:include filename="$(find laikago_description)/robot/const.xacro"/>
+    <xacro:include filename="$(find laikago_description)/robot/materials.xacro"/>
+    <xacro:include filename="$(find laikago_description)/robot/leg.xacro"/>
 
     <!-- Base footpoint Link -->
     <link name="base">
@@ -27,7 +27,7 @@
         <visual>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
-                <mesh filename="package://laikago/meshes/trunk.dae" scale="1 1 1"/>
+                <mesh filename="package://laikago_description/meshes/trunk.dae" scale="1 1 1"/>
             </geometry>
             <material name="orange"/>
         </visual>

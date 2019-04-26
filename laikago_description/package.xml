@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-    <name>laikago</name>
+    <name>laikago_description</name>
     <version>0.0.0</version>
-    <description>The laikago package</description>
+    <description>The laikago_description package</description>
 
     <maintainer email="laikago@unitree.cc">unitree</maintainer>
     <license>MPL</license>
