@@ -8,7 +8,7 @@ We use Xacro formatted description, which is simpler and cleaner than URDF forma
 
 ### Instructions:
 #### Build:
-* `cd ~/path-to-catkin-workspace`      (for example, replace 'path-to-catkin-workspace' with 'catkin_ws')
+* `cd ~/path-to-catkin-workspace`  (for example, replace 'path-to-catkin-workspace' with 'catkin_ws')
 * `catkin_make`
 * `source ~/path-to-catkin-workspace/devel/setup.bash`
 #### Run:
