@@ -8,11 +8,8 @@ We use Xacro formatted description, which is simpler and cleaner than URDF forma
 #### Build:
 * `cd ~/path-to-catkin-workspace`
 * `catkin_make`
+* `source ~/path-to-catkin-workspace/devel/setup.bash`
 #### Run:
-* `cd ~/path-to-catkin-workspace/src/laikago_rviz/launch`
-* `roslaunch ./rviz.launch`
-
-Or you can just run:
 * `roslaunch laikago_rviz rviz.launch`
 
 The robot should be spawned in Rviz.
