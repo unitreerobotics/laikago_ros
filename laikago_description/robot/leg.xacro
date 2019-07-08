@@ -142,12 +142,10 @@
             </inertial>
         </link>
 
-        <joint name="${name}_foot_fixed" type="revolute">
+        <joint name="${name}_foot_fixed" type="fixed">
             <origin rpy="0 0 0" xyz="0 0 ${-(calf_length)}"/>
             <parent link="${name}_calf"/>
             <child link="${name}_foot"/>
-            <axis xyz="0 0 1"/>
-            <limit effort="100.0" velocity="0.05" lower="-0.001" upper="0.001"/>
         </joint>
 
         <link name="${name}_foot">
@@ -158,7 +156,7 @@
                 </geometry>
                 <material name="orange"/>
             </visual>
-            <collision name="${name}_foot_collision">
+            <collision>
                 <origin rpy="0 0 0" xyz="0 0 0"/>
                 <geometry>
                     <sphere radius="${foot_radius}"/>
@@ -172,6 +170,7 @@
                     izz="${(2*foot_mass)/5.0*(foot_radius*foot_radius)}"/>             
             </inertial>
         </link>
+
         <xacro:leg_transmission name="${name}"/>
     </xacro:macro>
 </robot>

@@ -4,6 +4,7 @@
 
     <!-- Constants for robot dimensions -->
     <xacro:property name="PI" value="3.1415926535897931"/>
+    <xacro:property name="stick_mass" value="0.00001"/>
 
     <!-- simplified collision value -->
     <xacro:property name="trunk_width" value="0.172"/> 
@@ -18,6 +19,8 @@
     <xacro:property name="calf_width" value="0.016"/>
     <xacro:property name="calf_height" value="0.016"/>
     <xacro:property name="foot_radius" value="0.0265"/>
+    <xacro:property name="stick_radius" value="0.01"/>
+    <xacro:property name="stick_length" value="0.2"/>
 
     <!-- kinematic value -->
     <xacro:property name="thigh_offset" value="0.037"/>
