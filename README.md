@@ -3,7 +3,8 @@ Laikago working with ROS. The test environment is: Ubuntu 16.04 + ROS Kinetic.
 # Instructions:
 
 ## Dependencies:
-If you want to simulated with Gazebo:
+If you want to simulate with Gazebo:
+
 [Gazebo8](http://gazebosim.org/)
 
 
