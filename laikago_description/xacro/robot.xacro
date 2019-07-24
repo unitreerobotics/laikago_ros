@@ -2,9 +2,10 @@
 
 <robot name="laikago_description" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-    <xacro:include filename="$(find laikago_description)/robot/const.xacro"/>
-    <xacro:include filename="$(find laikago_description)/robot/materials.xacro"/>
-    <xacro:include filename="$(find laikago_description)/robot/leg.xacro"/>
+    <xacro:include filename="$(find laikago_description)/xacro/const.xacro"/>
+    <xacro:include filename="$(find laikago_description)/xacro/materials.xacro"/>
+    <xacro:include filename="$(find laikago_description)/xacro/leg.xacro"/>
+    <xacro:include filename="$(find laikago_gazebo)/launch/gazebo.xacro"/>
     
     <!-- Rollover Protection mode will add an additional stick on the top, use "true" or "false" to switch it. -->
     <xacro:property name="rolloverProtection" value="false"/>
