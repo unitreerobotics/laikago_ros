@@ -25,11 +25,14 @@ Make sure unders have been installed:
 sudo apt-get install ros-kinetic-controller-manager ros-kinetic-ros-control ros-kinetic-ros-controllers ros-kinetic-joint-state-controller ros-kinetic-effort-controllers ros-kinetic-velocity-controllers ros-kinetic-position-controllers ros-kinetic-robot-controllers ros-kinetic-robot-state-publisher ros-kinetic-gazebo8-ros ros-kinetic-gazebo8-ros-control ros-kinetic-gazebo8-ros-pkgs ros-kinetic-gazebo8-ros-dev
 ```
 * `roslaunch laikago_gazebo normal.launch`
+
 The robot should be lying on the ground with joints not activated.
 
 * `rosrun laikago_gazebo laikago_servo`
+
 The robot will stand up slowly.
 
 * `rosrun laikago_gazebo laikago_external_force`
+
 You can add external disturbances with this node, like a push or a kick.
 
