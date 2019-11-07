@@ -5,7 +5,7 @@ Basic function: laikago_msgs, laikago_description
 Simulation related: laikago_controller, laikago_gazebo
 
 
-If you want to simulate with [Gazebo](http://gazebosim.org/), we recommend x86 platform. ARM platform is not suggested for simulation.
+If you want to simulate with [Gazebo](http://gazebosim.org/), we recommend *x86 platform*. *ARM platform* is not suggested for simulation.
 
 The test environment is: Ubuntu 16.04 + ROS Kinetic. Ubuntu 18.04 + ROS Melodic is comming soon.
 
