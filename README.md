@@ -1,7 +1,9 @@
 # Instructions: Laikago working with ROS. 
 
 Basic function: laikago_msgs, laikago_description
+
 Simulation related: laikago_controller, laikago_gazebo
+
 
 If you want to simulate with [Gazebo](http://gazebosim.org/), we recommend x86 platform. ARM platform is not suggested for simulation.
 
