@@ -1,12 +1,14 @@
-Laikago working with ROS. The test environment is: Ubuntu 16.04 + ROS Kinetic.
+# Instructions: Laikago working with ROS. 
 
-# Instructions:
+Basic function: laikago_msgs, laikago_description
+Simulation related: laikago_controller, laikago_gazebo
+
+If you want to simulate with [Gazebo](http://gazebosim.org/), we recommend x86 platform. ARM platform is not suggested for simulation.
+
+The test environment is: Ubuntu 16.04 + ROS Kinetic. Ubuntu 18.04 + ROS Melodic is comming soon.
 
 ## Dependencies:
-If you want to simulate with Gazebo:
-
 [Gazebo8](http://gazebosim.org/)
-
 
 ## Build:
 * `cd ~/path-to-catkin-workspace`  (for example, replace 'path-to-catkin-workspace' with 'catkin_ws')
