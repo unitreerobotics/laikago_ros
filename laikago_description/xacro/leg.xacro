@@ -12,26 +12,26 @@
             <child link="${name}_hip"/>
             <axis xyz="1 0 0"/>
             <dynamics damping="${damping}" friction="${friction}"/>
-            <xacro:if value="${(mirror_dae == 'true')}">
+            <xacro:if value="${(mirror_dae == True)}">
                 <limit effort="${hip_torque_max}" velocity="${hip_velocity_max}" lower="${hip_min*PI/180.0}" upper="${hip_max*PI/180.0}"/>
             </xacro:if>
-            <xacro:if value="${(mirror_dae == 'false')}">
+            <xacro:if value="${(mirror_dae == False)}">
                 <limit effort="${hip_torque_max}" velocity="${hip_velocity_max}" lower="${-hip_max*PI/180.0}" upper="${-hip_min*PI/180.0}"/>
             </xacro:if>            
         </joint>
 
         <link name="${name}_hip">
             <visual>
-                <xacro:if value="${(mirror_dae == 'true') and (front_hind_dae == 'true')}">
+                <xacro:if value="${(mirror_dae == True) and (front_hind_dae == True)}">
                     <origin rpy="0 0 0" xyz="0 0 0"/>
                 </xacro:if>
-                <xacro:if value="${(mirror_dae == 'false') and (front_hind_dae == 'true')}">
+                <xacro:if value="${(mirror_dae == False) and (front_hind_dae == True)}">
                     <origin rpy="${PI} 0 0" xyz="0 0 0"/>
                 </xacro:if>
-                <xacro:if value="${(mirror_dae == 'true') and (front_hind_dae == 'false')}">
+                <xacro:if value="${(mirror_dae == True) and (front_hind_dae == False)}">
                     <origin rpy="0 ${PI} 0" xyz="0 0 0"/>
                 </xacro:if>
-                <xacro:if value="${(mirror_dae == 'false') and (front_hind_dae == 'false')}">
+                <xacro:if value="${(mirror_dae == False) and (front_hind_dae == False)}">
                     <origin rpy="${PI} ${PI} 0" xyz="0 0 0"/>
                 </xacro:if>
                 <geometry>
@@ -84,10 +84,10 @@
             <visual>
                 <origin rpy="0 0 0" xyz="0 0 0"/>
                 <geometry>
-                    <xacro:if value="${mirror_dae == 'true'}">
+                    <xacro:if value="${mirror_dae == True}">
                         <mesh filename="package://laikago_description/meshes/thigh.dae" scale="1 1 1"/>
                     </xacro:if>
-                    <xacro:if value="${mirror_dae == 'false'}">
+                    <xacro:if value="${mirror_dae == False}">
                         <mesh filename="package://laikago_description/meshes/thigh_mirror.dae" scale="1 1 1"/>
                     </xacro:if>
                 </geometry>
