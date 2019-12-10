@@ -16,8 +16,8 @@ Ubuntu 18.04 + ROS Melodic.
 ## Dependencies:
 [Gazebo8](http://gazebosim.org/)
 
-## Build:
-Make the following exist in your ~/.bashrc file or export them in terminal. 'kinetic', 'gazebo-8' and '~/catkin_ws' should be replaced in your own case.
+## Configuration:
+Make the following exist in your `~/.bashrc` file or export them in terminal. `kinetic`, `gazebo-8` and `~/catkin_ws` should be replaced in your own case.
 ```
 source /opt/ros/kinetic/setup.bash
 source /usr/share/gazebo-8/setup.sh
@@ -27,7 +27,7 @@ export GAZEBO_PLUGIN_PATH=~/catkin_ws/devel/lib:${GAZEBO_PLUGIN_PATH}
 export LD_LIBRARY_PATH=~/catkin_ws/devel/lib:${LD_LIBRARY_PATH}
 ```
 
-Build the codes:
+## Build:
 * `cd ~/catkin_ws`
 * `catkin_make`
 
