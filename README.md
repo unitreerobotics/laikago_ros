@@ -17,7 +17,7 @@ Ubuntu 18.04 + ROS Melodic.
 [Gazebo8](http://gazebosim.org/)
 
 ## Configuration:
-Make the following exist in your `~/.bashrc` file or export them in terminal. `kinetic`, `gazebo-8` and `~/catkin_ws` should be replaced in your own case.
+Make sure the following exist in your `~/.bashrc` file or export them in terminal. `kinetic`, `gazebo-8` and `~/catkin_ws` should be replaced in your own case.
 ```
 source /opt/ros/kinetic/setup.bash
 source /usr/share/gazebo-8/setup.sh
