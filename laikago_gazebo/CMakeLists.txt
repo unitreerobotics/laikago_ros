@@ -36,6 +36,8 @@ add_library(${PROJECT_NAME}
     src/body.cpp 
 )
 
+add_dependencies(${PROJECT_NAME} laikago_msgs_gencpp)
+
 target_link_libraries(${PROJECT_NAME}
   ${catkin_LIBRARIES} ${EXTRA_LIBS}
 )
