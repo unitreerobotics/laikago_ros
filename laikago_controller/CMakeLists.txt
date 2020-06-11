@@ -26,4 +26,5 @@ include_directories(include ${catkin_INCLUDE_DIRS} ${Boost_INCLUDE_DIR})
 link_directories($(catkin_LIB_DIRS) lib)
 
 add_library(laikago_joint_controller src/joint_controller.cpp)
+add_dependencies(laikago_joint_controller laikago_msgs_gencpp)
 target_link_libraries(laikago_joint_controller ${catkin_LIBRARIES} laikago_control_tool)
